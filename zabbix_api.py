@@ -375,7 +375,7 @@ def main():
         #昨日の取得
         datetime_output = datetime.datetime.now() - datetime.timedelta(days=1)
         ##昨日始の取得
-        datetime_start = datetime.datetime(datetime_output.year, datetime_output.month, 1, 0, 0, 0)
+        datetime_start = datetime.datetime(datetime_output.year, datetime_output.month, datetime_output.day, 0, 0, 0)
         ##昨日末の取得
         datetime_end = datetime.datetime(datetime_output.year, datetime_output.month, datetime_output.day, 23, 59, 59)
         ##出力フォルダ
